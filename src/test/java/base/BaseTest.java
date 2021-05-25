@@ -1,6 +1,7 @@
 package base;
 
 import com.github.javafaker.Faker;
+import org.junit.jupiter.api.BeforeAll;
 
 public class BaseTest {
     protected static String BASE_URL = "https://jsonplaceholder.typicode.com";
@@ -13,5 +14,8 @@ public class BaseTest {
     public static String fakeTitle;
     public static int fakeId;
 
-
+    @BeforeAll
+    public static void beforeAll() {
+        faker = new Faker();
+    }
 }

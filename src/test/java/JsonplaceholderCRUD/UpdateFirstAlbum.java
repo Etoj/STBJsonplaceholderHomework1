@@ -1,24 +1,17 @@
 package JsonplaceholderCRUD;
 
 import base.BaseTest;
-import com.github.javafaker.Faker;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.json.JSONObject;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
 
 public class UpdateFirstAlbum extends BaseTest {
-
-    @BeforeAll
-    public static void beforeAll() {
-        faker = new Faker();
-    }
 
     @BeforeEach
     public void beforeEach() {
